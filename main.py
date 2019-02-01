@@ -13,24 +13,22 @@ print("""
         Le dollars  [1]
         L'euro      [2]
         Le franc    [3]""")
-while 1:
+while true:
     response = raw_input("    Choisissez votre devise 1, 2 ou 3 : ")
     if response in ['1', '2', '3']:
         break
     else:
         print("Choix incorrect !")
 devise = response
-if response == 1:
+if response == str(1):
     devise = "$"
     print("Le dollars  [1]")
-elif response == 2:
+elif response == str(2):
     devise = "€"
     print("L'euro      [2]")
-elif response == 3:
+elif response == str(3):
     devise = "Frs"
     print("Le franc    [3]")
-else:
-    print("Choix incorrect !")
 print("Vous avez choisi : ", devise)
 vatTX = input("Quel est le taux de TVA ? ")
 vatTX = float(vatTX)
