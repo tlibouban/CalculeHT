@@ -13,7 +13,7 @@ print("""
         Le dollars  [1]
         L'euro      [2]
         Le franc    [3]""")
-while true:
+while True:
     response = raw_input("    Choisissez votre devise 1, 2 ou 3 : ")
     if response in ['1', '2', '3']:
         break
